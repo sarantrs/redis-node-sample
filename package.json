@@ -1,0 +1,20 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "REDIS_HOST=sr-test-ro.ydl3pu.ng.0001.use1.cache.amazonaws.com REDIS_PORT=6379 LOCAL_REDIS=true nodemon app.js",
+    "build": "REDIS_HOST=sr-test-ro.ydl3pu.ng.0001.use1.cache.amazonaws.com REDIS_PORT=6379 LOCAL_REDIS=false node app.js"
+  },
+  "author": "saravanan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "ioredis": "^5.2.3",
+    "jwt-decode": "^3.1.2"
+  }
+}
